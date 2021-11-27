@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane prefHeight="540.0" prefWidth="502.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXButton alignment="TOP_CENTER" contentDisplay="TOP" layoutX="41.0" layoutY="41.0" prefHeight="209.0" prefWidth="210.0" style="-fx-background-color: #384053;" text="Maruti Suzuki Alto 800" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="96.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </JFXButton>
+      <Rating layoutX="58.0" layoutY="210.0" rating="3.0" />
+      <JFXButton alignment="TOP_CENTER" contentDisplay="TOP" layoutX="266.0" layoutY="41.0" prefHeight="209.0" prefWidth="210.0" style="-fx-background-color: #384053;" text="Maruti Suzuki Celerio" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="96.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </JFXButton>
+      <Rating layoutX="283.0" layoutY="210.0" rating="4.0" />
+      <JFXButton alignment="TOP_CENTER" contentDisplay="TOP" layoutX="41.0" layoutY="290.0" prefHeight="209.0" prefWidth="210.0" style="-fx-background-color: #384053;" text="Maruti Suzuki Wagon" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="96.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </JFXButton>
+      <Rating layoutX="58.0" layoutY="451.0" rating="3.0" />
+      <JFXButton alignment="TOP_CENTER" contentDisplay="TOP" layoutX="266.0" layoutY="290.0" prefHeight="209.0" prefWidth="210.0" style="-fx-background-color: #384053;" text="Maruti Suzuki swift" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="96.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </JFXButton>
+      <Rating layoutX="283.0" layoutY="451.0" rating="3.0" />
+   </children>
+</AnchorPane>

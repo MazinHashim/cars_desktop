@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancorPane" prefHeight="540.0" prefWidth="502.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
+   <children>
+      <GridPane hgap="30.0" layoutX="93.0" layoutY="62.0" vgap="40.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+         </padding>
+         <children>
+            <JFXButton fx:id="maruti" contentDisplay="TOP" onAction="#carsAction" prefHeight="225.0" prefWidth="195.0" style="-fx-background-color: #384053;" text="MARUTI SUZUKI" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@maruti.jpg" />
+                     </image></ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow height="31.0" radius="17.5" spread="0.2" width="41.0" />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="hyundai" contentDisplay="TOP" graphicTextGap="15.0" onAction="#carsAction" prefHeight="209.0" prefWidth="206.0" style="-fx-background-color: #384053;" text="HYUNDAI" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="178.0">
+                     <image>
+                        <Image url="@hyundai.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow height="31.0" radius="17.5" spread="0.2" width="41.0" />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="tata" alignment="CENTER" contentDisplay="TOP" graphicTextGap="20.0" onAction="#carsAction" prefHeight="209.0" prefWidth="223.0" style="-fx-background-color: #384053;" text="TATA MOTORS" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="120.0" fitWidth="170.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@tata.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow height="31.0" radius="17.5" spread="0.2" width="41.0" />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="chevr" contentDisplay="TOP" graphicTextGap="10.0" onAction="#carsAction" prefHeight="209.0" prefWidth="194.0" style="-fx-background-color: #384053;" text="CHEVROLET" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="179.0">
+                     <image>
+                        <Image url="@chevr.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow height="31.0" radius="17.5" spread="0.2" width="41.0" />
+               </effect>
+            </JFXButton>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </GridPane>
+   </children>
+</AnchorPane>

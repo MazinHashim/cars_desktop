@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <AnchorPane onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #2d3447; -fx-background-radius: 10;">
+         <children>
+            <VBox layoutY="143.0" prefHeight="457.0" prefWidth="199.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="143.0">
+               <children>
+                  <Pane prefHeight="114.0" prefWidth="199.0" style="-fx-background-color: #364261;">
+                     <children>
+                        <Text fill="WHITE" layoutX="21.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wellcome to Car Review here,you will find car infromation" textAlignment="CENTER" wrappingWidth="157.00000596046448">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Label focusTraversable="false" prefHeight="31.0" prefWidth="113.0" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXButton fx:id="home" onAction="#homeAction" prefHeight="51.0" prefWidth="199.0" style="-fx-focus-color: #384053;" text="HOME" textFill="#a0a2ab">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="51.0" prefWidth="199.0" style="-fx-focus-color: #384053;" text="MY CARS" textFill="#a0a2ab">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="51.0" prefWidth="199.0" style="-fx-focus-color: #384053;" text="ABOUT" textFill="#a0a2ab">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Separator focusTraversable="false" prefHeight="23.0" prefWidth="156.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Separator>
+                  <JFXButton focusTraversable="false" prefHeight="25.0" prefWidth="203.0" style="-fx-border-color: white;" text="CONTACT US" textFill="#a0a2ab">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <Label layoutX="36.0" layoutY="94.0" text="Car" textFill="#2196f3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="94.0" text="Review" textFill="#a0a2ab">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutX="13.0" layoutY="131.0" prefHeight="0.0" prefWidth="173.0" />
+            <ImageView layoutX="65.0" layoutY="38.0">
+               <image>
+                  <Image url="@car.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="ancor" layoutX="199.0" layoutY="62.0" prefHeight="540.0" prefWidth="502.0" style="-fx-background-color: #384053;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <JFXToolbar layoutX="199.0" layoutY="1.0" prefHeight="56.0" prefWidth="502.0">
+               <center>
+                  <Text fx:id="well" fill="#2196f3" strokeType="OUTSIDE" strokeWidth="0.0" text="Wellcome : Mazin" wrappingWidth="168.2294921875" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Bell MT Italic" size="18.0" />
+                     </font>
+                  </Text>
+               </center>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <right>
+                  <Pane prefHeight="36.0" prefWidth="107.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <JFXButton fx:id="logout" contentDisplay="GRAPHIC_ONLY" layoutX="7.0" layoutY="2.0" onAction="#logoutAction" prefHeight="32.0" prefWidth="15.0" text="Button">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@location.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton id="close" fx:id="exit" alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="81.0" layoutY="2.0" onAction="#exitStage" prefHeight="32.0" prefWidth="15.0" text="X" textFill="#a0a2ab">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </right>
+            </JFXToolbar>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

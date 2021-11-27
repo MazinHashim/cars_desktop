@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <AnchorPane onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="391.0" prefWidth="600.0" style="-fx-background-color: #2d3447; -fx-background-radius: 10;" stylesheets="@application.css">
+         <children>
+            <JFXTextField id="user" fx:id="user" focusColor="#2196f3" focusTraversable="false" layoutX="174.0" layoutY="144.0" prefHeight="28.0" prefWidth="242.0" promptText="Enet User name" stylesheets="@application.css" unFocusColor="#a0a2ab">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField id="pass" fx:id="pass" focusColor="#2196f3" focusTraversable="false" layoutX="174.0" layoutY="213.0" prefHeight="28.0" prefWidth="242.0" promptText="Enter Password" stylesheets="@application.css" unFocusColor="#a0a2ab">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="25.0" layoutY="14.0" onAction="#login_signUp" prefHeight="39.0" prefWidth="84.0" style="-fx-background-color: #151928; -fx-border-color: #a0a2ab;" text="Sign up" textFill="#a0a2ab">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="login" layoutX="341.0" layoutY="275.0" onAction="#login_login" prefHeight="28.0" prefWidth="84.0" style="-fx-background-color: #2196f3;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXCheckBox fx:id="remem" checkedColor="#2196f3" layoutX="160.0" layoutY="279.0" text="Remember Me" textFill="#a0a2ab" unCheckedColor="#a0a2ab">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXButton layoutX="205.0" layoutY="318.0" prefHeight="25.0" prefWidth="168.0" text="forget your password?" textFill="#a0a2ab" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="211.0" layoutY="89.0" prefHeight="17.0" prefWidth="47.0" text="Car" textFill="#2196f3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="259.0" layoutY="89.0" prefHeight="35.0" prefWidth="84.0" text="Review" textFill="#a0a2ab">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="247.0" layoutY="28.0">
+               <image>
+                  <Image url="@car.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="136.0" layoutY="215.0">
+               <image>
+                  <Image url="@password.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="136.0" layoutY="146.0">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+            </ImageView>
+            <JFXProgressBar fx:id="progress" layoutX="156.0" layoutY="369.0" prefHeight="0.0" prefWidth="242.0" progress="0.0" visible="false" />
+            <JFXButton id="close" fx:id="exit" layoutX="557.0" layoutY="13.0" onAction="#exitStage" opacity="0.56" prefHeight="30.0" prefWidth="24.0" style="-fx-background-color: #2196f3; -fx-background-radius: 50;" text="X" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox id="close" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignupController">
+   <children>
+      <AnchorPane onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="440.0" prefWidth="612.0" style="-fx-background-color: #2d3447; -fx-background-radius: 10;">
+         <children>
+            <JFXTextField id="sinuss" fx:id="userName" focusColor="#2196f3" focusTraversable="false" layoutX="188.0" layoutY="108.0" prefHeight="25.0" prefWidth="237.0" promptText="Enter User name" stylesheets="@application.css" unFocusColor="#a0a2ab">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField id="sinpass" fx:id="password" focusColor="#2196f3" focusTraversable="false" layoutX="188.0" layoutY="166.0" prefHeight="25.0" prefWidth="237.0" promptText="Enter Password" stylesheets="@application.css" unFocusColor="#a0a2ab">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXRadioButton fx:id="male" focusTraversable="false" layoutX="178.0" layoutY="225.0" prefHeight="20.0" prefWidth="85.0" text="Male" textFill="#a0a2ab">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="female" focusTraversable="false" layoutX="306.0" layoutY="225.0" prefHeight="20.0" prefWidth="71.0" text="Female" textFill="#a0a2ab" toggleGroup="$gender">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXTextField id="sinloc" fx:id="locat" focusColor="#2196f3" focusTraversable="false" layoutX="188.0" layoutY="277.0" prefHeight="25.0" prefWidth="237.0" promptText="Enter Location" stylesheets="@application.css" unFocusColor="#a0a2ab">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="signup" layoutX="188.0" layoutY="335.0" onAction="#signUp_signUp" prefHeight="35.0" prefWidth="237.0" style="-fx-background-color: #2196f3;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView layoutX="154.0" layoutY="110.0">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="154.0" layoutY="166.0">
+               <image>
+                  <Image url="@password.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="154.0" layoutY="223.0">
+               <image>
+                  <Image url="@gender.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="154.0" layoutY="273.0">
+               <image>
+                  <Image url="@location.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="14.0" layoutY="14.0" onAction="#signUp_login" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #151928; -fx-border-color: #a0a2ab;" text="Login" textFill="#a0a2ab">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView layoutX="263.0" layoutY="14.0">
+               <image>
+                  <Image url="@car.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="235.0" layoutY="64.0" prefHeight="35.0" prefWidth="48.0" text="Car" textFill="#2196f3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="283.0" layoutY="64.0" prefHeight="35.0" prefWidth="77.0" text="Review" textFill="#a0a2ab">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <JFXProgressBar fx:id="prog" layoutX="172.0" layoutY="403.0" prefHeight="3.0" prefWidth="278.0" progress="0.0" visible="false" />
+            <Label fx:id="mass" layoutX="485.0" layoutY="393.0" prefHeight="26.0" prefWidth="113.0" text="nice register" textFill="#8ed8ee" visible="false">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <JFXButton id="close" fx:id="exit" layoutX="568.0" layoutY="8.0" onAction="#exitStage" opacity="0.49" prefHeight="3.0" prefWidth="30.0" style="-fx-background-color: #2196f3; -fx-background-radius: 50;" text="X" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>
